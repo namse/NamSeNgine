@@ -1,0 +1,40 @@
+{
+  "extends": ["tslint-consistent-codestyle", "tslint:recommended"],
+  "rules": {
+    "max-line-length": {
+      "options": [
+        120
+      ]
+    },
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "quotemark": false,
+    "ordered-imports": false,
+    "interface-name": false,
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "interface-over-type-literal": false,
+    "naming-convention": [
+      true,
+      {"type": "property", "modifiers": "private", "leadingUnderscore": "require"},
+      {"type": "property", "modifiers": ["private", "const"], "leadingUnderscore": "require"},
+      {"type": "property", "modifiers": ["private", "static"], "leadingUnderscore": "forbid"},
+
+      {"type": "accessor", "modifiers": "get", "leadingUnderscore": "forbid"},
+      {"type": "accessor", "modifiers": "set", "leadingUnderscore": "forbid"},
+
+      {"type": "method", "leadingUnderscore": "forbid"}
+    ],
+    "variable-name": false
+  },
+  "jsRules": {
+    "max-line-length": {
+      "options": [
+        120
+      ]
+    }
+  }
+}
